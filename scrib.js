@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault(); // Evita que la página recargue de forma automática
       
-      const nombre  = document.getElementById('nombre').value.trim();
-      const email   = document.getElementById('email').value.trim();
+      
       const mensaje = document.getElementById('mensaje').value.trim();
       
       // 1. Validación básica de campos vacíos
