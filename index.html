@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal del Equipo - Práctica de Cierre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Portal de Desarrollo Integral</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- Sección de integrantes preexistente -->
+    <section id="equipo" aria-labelledby="titulo-equipo">
+      <h2 id="titulo-equipo">Nuestro Equipo</h2>
+      <div class="team-cards">
+        <article class="team-card">
+          <h3>Integrante 1</h3>
+          <p>Rol asignado en el proyecto.</p>
+        </article>
+        <article class="team-card">
+          <h3>Integrante 2</h3>
+          <p>Rol asignado en el proyecto.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- BLOQUE AGREGADO POR EL ROL HTML (Sección Portafolio)     -->
+    <!-- ======================================================== -->
+    <section id="portafolio" aria-labelledby="titulo-portafolio">
+      <h2 id="titulo-portafolio">Nuestro Portafolio</h2>
+      <p>Descripción breve del equipo y sus proyectos académicos y profesionales.</p>
+      
+      <div class="portafolio-grid">
+        <article class="proyecto-card">
+          <figure>
+            <img src="img/proyecto1.png" alt="Captura de pantalla de la interfaz del sistema web DREAMS POP">
+            <figcaption>DREAMS POP - Sistema de Ventas</figcaption>
+          </figure>
+          <h3>Proyecto 1 - DREAMS POP</h3>
+          <p>Aplicación de gestión comercial y ciclo de ventas integral para control de insumos y pedidos en tiempo real.</p>
+          <a href="#" class="btn-ver">Ver proyecto</a>
+        </article>
+
+        <article class="proyecto-card">
+          <figure>
+            <img src="img/proyecto2.png" alt="Diagrama de arquitectura del Sistema de Materiales CFE Ixmiquilpan">
+            <figcaption>CFE Ixmiquilpan - Gestión de Materiales</figcaption>
+          </figure>
+          <h3>Proyecto 2 - CFE Gestión</h3>
+          <p>Propuesta técnica y desarrollo web modular para la administración y control de inventarios de la comisión local.</p>
+          <a href="#" class="btn-ver">Ver proyecto</a>
+        </article>
+
+        <article class="proyecto-card">
+          <figure>
+            <img src="img/proyecto3.png" alt="Mockup de la interfaz de MeduWatch para Smartwatch y móvil">
+            <figcaption>MeduWatch - Monitoreo Marítimo</figcaption>
+          </figure>
+          <h3>Proyecto 3 - MeduWatch</h3>
+          <p>Diseño multiplataforma para el rastreo de rutas marítimas y alertas de proximidad de fauna marina.</p>
+          <a href="#" class="btn-ver">Ver proyecto</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- BLOQUE AGREGADO POR EL ROL HTML (Formulario Contacto)    -->
+    <!-- ======================================================== -->
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contáctanos</h2>
+      <form id="form-contacto" novalidate>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="msg-respuesta" aria-live="polite"></p>
+      </form>
+      
+      <!-- BONUS OPCIONAL (JS): Contenedor dinámico de mensajes -->
+      <div id="contenedor-mensajes-guardados" style="margin-top: 20px;"></div>
+    </section>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- LÍNEA EN CONFLICTO SIMULADO (MODIFICADA POR ROL JS)     -->
+  <!-- ======================================================== -->
+  <footer>
+    <p>© 2026 - Portal del Equipo *. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
